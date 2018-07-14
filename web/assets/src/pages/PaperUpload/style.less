@@ -1,0 +1,158 @@
+
+.ant-collapse-content{
+	.ant-collapse-content-box{
+		padding: 0;
+	}
+}
+.paper_upload_html{
+	background-color: #f1f2f4;
+	.ant-layout-sider{
+		background-color: #f1f2f4;
+		margin: 7px;
+	}
+	.ant-layout-header{
+		background-color: #fff;
+		margin: 7px 7px 7px 0;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		box-sizing: border-box;
+		height: 50px;
+		line-height: 50px;
+	}
+	.ant-layout-content{
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		margin: 0 7px 7px 0;
+	}
+	.state_show{
+		height:150px;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		box-sizing: border-box;
+		padding: 10px;
+		table{
+			width: 100%;
+			tr{
+				td{
+					text-align: center;
+				}
+			}
+		}
+	}
+	.batch_panel{
+
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		box-sizing: border-box;
+		box-sizing: border-box;
+		margin-top: 7px;
+		._title{
+			color: #000;
+			padding: 5px 5px 5px 10px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #ddd;
+		}
+		.batch_header{
+			width:100%;
+			height: 26px;
+			border-bottom: 1px solid #ddd;
+			tr{
+				height: 26px;
+				td{
+					color:#111;
+					text-align: center;
+				}
+			}
+		}
+		.batch_list{
+			height: 160px;
+			overflow-y: auto;
+			position: relative;
+			table{
+				tr{
+					&:hover{
+						background-color: fadeout(#2D6EDB,80%);
+					}
+				}
+			}
+		}
+
+	}
+	.normal_panel{
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		box-sizing: border-box;
+		box-sizing: border-box;
+		margin-top: 7px;
+		._title{
+			border-bottom: 1px solid #ddd;
+			color: #000;
+			padding: 5px 5px 5px 10px;
+			box-sizing: border-box;
+		}
+		.normal_header{
+			width:100%;
+			height: 26px;
+			border-bottom: 1px solid #ddd;
+			tr{
+				height: 26px;
+				td{
+					color:#111;
+					text-align: center;
+				}
+			}
+		}
+		.normal_list{
+			height: 160px;
+			overflow-y: auto;
+		}
+	}
+
+	.batch_delete_menu{
+		position: absolute;
+		top:0;
+		left:0;
+		width:70px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		display: none;
+		z-index: 100;
+		&:hover{
+			background-color: #eaeaea;
+		}
+	}
+	.picture_center{
+
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+		box-sizing: border-box;
+		overflow: hidden;
+		height: 560px;
+		border:1px solid @theme_color;
+		background-image: url(../../imgs/scan_bg.png);
+		background-repeat: no-repeat;
+		background-size: 100% 558px;
+		.picture_box{
+			display: inline-block;
+			height: 560px;
+			overflow-y: auto;
+			img{
+				width:900px;
+			}
+		}
+		.layer_image{
+			position: absolute;
+			opacity:0.5;
+			left:0;
+			left:0;
+		}
+	}
+}

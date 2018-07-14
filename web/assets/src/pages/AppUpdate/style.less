@@ -1,0 +1,47 @@
+._app_update_com{
+	overflow: hidden;
+	height: 328px;
+	._header{
+		height: 40px;
+		background-color: @theme_color;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		-webkit-app-region: drag;
+		span{
+			color:#fff;
+			padding-left: 16px;
+		}
+		img{
+
+			margin-right: 16px;
+			-webkit-app-region: no-drag;
+			cursor: pointer;
+		}
+	}
+	._content{
+		padding:20px 30px 20px 30px;
+		box-sizing: border-box;
+		height:180px;
+		overflow-y: auto;
+	}
+	._progress{
+		width:90%;
+		margin: 0 auto;
+		display: none;
+		._tip{
+			text-align: right;
+			._percent{
+				color:@theme_color;
+			}
+			._speed{
+				color:@theme_color;
+			}
+		}
+
+	}
+	._footer{
+		margin-top: 15px;
+		text-align: center;
+	}
+}

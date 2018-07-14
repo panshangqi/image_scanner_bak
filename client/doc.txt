@@ -1,0 +1,64 @@
+//文档结构说明
+build  window 打包目录
+client 客户端源代码
+web 前端代码
+web_dst 前端打包代码
+
+//react 配置
+npm install -g create-react-app
+create-react-app [your project name]
+cd [project name]
+
+npm run eject  导出配置
+
+
+
+cnpm start
+cnpm run-script package
+node-gyp configure
+node-gyp build
+
+
+
+# 将打包成可执行的运行包进行asar二进制加密 asar:  resources/app
+npm install -g asar
+在app 同级目录执行
+asar pack ./app app.asar
+之后把app 文件夹删除即可
+
+
+electron-builder  构建打包工具
+为了防止某些模块无法打包，删除node_modules 只用npm install 重新安装
+
+electron-builder --win --ia32
+
+文档连接：https://www.electron.build/configuration/nsis
+http://npm.taobao.org/package/electron-packager
+
+# 安装程序更新服务
+安装npm install  electron-updater 在应用中触发更新检查， electron-updater 自动会通过对应url下的xml文件检查更新
+
+exe 获取管理员权限：
+mt.exe
+mt -inputresource:image_scanner.exe -out:manifest.xml
+/*
+<requestedExecutionLevel uiAccess="false" level="asInvoker"/>
+修改为：
+<requestedExecutionLevel uiAccess="false" level="requireAdministrator"/>
+*/
+
+mt -manifest manifest.xml -outputresource:image_scanner.exe
+
+
+…or create a new repository on the command line
+echo "# image_scanner_electron" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:panshangqi/image_scanner_electron.git
+git push -u origin master
+…or push an existing repository from the command line
+git remote add origin git@github.com:panshangqi/image_scanner_electron.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.

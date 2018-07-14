@@ -1,0 +1,82 @@
+#index_html{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    .page_header{
+        //-webkit-app-region: drag;
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .page_content{
+        width:100%;
+        height:600px;
+        border: 0;
+        padding: 20px;
+    }
+    .page_footer{
+        text-align: center;
+    }
+    .update_tip{
+        width:320px;
+        margin: 0 auto
+    }
+    .update_progress_tip{
+        text-align: right;
+        font-size: 13px;
+        margin-top: 5px;
+        .upt_val{
+            color:#007bff;
+        }
+    }
+    .drive_list_content{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .drive_list_box{
+        width:400px;
+        height:200px;
+        background-color: #fafafa;
+        border: 1px solid #007bff;
+        overflow: hidden;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                padding-left: 10px;
+                box-sizing: border-box;
+                height: 28px;
+                line-height: 28px;
+                font-size: 13px;
+                font-family: monospace;
+                cursor: pointer;
+                label{
+                    display: block;
+                    width:400px;
+                    height: 28px;
+                    cursor: pointer;
+                    input{
+                        vertical-align: top;
+                        margin-top: 7px;
+                        margin-right: 5px;
+                    }
+                }
+
+                &:hover{
+                    background-color: #c3d9ff;
+                }
+            }
+        }
+    }
+    .drive_op_btns{
+        width:120px;
+        height:200px;
+        margin-left: 30px;
+        button{
+            margin-top: 10px;
+            width:120px;
+        }
+    }
+}

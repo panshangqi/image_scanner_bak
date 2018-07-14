@@ -1,0 +1,105 @@
+#index_html {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#index_html .page_header {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+#index_html .page_content {
+  width: 100%;
+  height: 600px;
+  border: 0;
+  padding: 20px;
+}
+#index_html .page_footer {
+  text-align: center;
+}
+#index_html .update_tip {
+  width: 320px;
+  margin: 0 auto;
+}
+#index_html .update_progress_tip {
+  text-align: right;
+  font-size: 13px;
+  margin-top: 5px;
+}
+#index_html .update_progress_tip .upt_val {
+  color: #007bff;
+}
+#index_html .drive_list_content {
+  display: flex;
+  flex-direction: row;
+}
+#index_html .drive_list_box {
+  width: 400px;
+  height: 200px;
+  background-color: #fafafa;
+  border: 1px solid #007bff;
+  overflow: hidden;
+}
+#index_html .drive_list_box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#index_html .drive_list_box ul li {
+  padding-left: 10px;
+  box-sizing: border-box;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
+  font-family: monospace;
+  cursor: pointer;
+}
+#index_html .drive_list_box ul li label {
+  display: block;
+  width: 400px;
+  height: 28px;
+  cursor: pointer;
+}
+#index_html .drive_list_box ul li label input {
+  vertical-align: top;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+#index_html .drive_list_box ul li:hover {
+  background-color: #c3d9ff;
+}
+#index_html .drive_op_btns {
+  width: 120px;
+  height: 200px;
+  margin-left: 30px;
+}
+#index_html .drive_op_btns button {
+  margin-top: 10px;
+  width: 120px;
+}
+.vertical {
+  margin-top: 150px;
+}
+.modal-footer {
+  justify-content: center;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 4px;
+  background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: #fff ;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(200, 200, 200, 0.5);
+}
+::-webkit-scrollbar-thumb:hover {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #c8c8c8;
+}

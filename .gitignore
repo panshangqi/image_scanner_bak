@@ -1,0 +1,9 @@
+
+client/node_modules/
+client/build/
+client/web_dst/
+*.exe
+*.dll
+web/node_modules/
+
+web/vector/

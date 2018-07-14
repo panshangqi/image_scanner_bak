@@ -1,0 +1,102 @@
+{
+  "name": "image_scanner",
+  "version": "6.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "build": {
+    "appId": "is_02156143110",
+    "copyright": "17zuoye",
+    "productName": "image_scanner",
+    "directories": {
+      "output": "build"
+    },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://10.200.3.16:8081/download/"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "src/img/logo.ico",
+      "signAndEditExecutable": true,
+      "artifactName": "${productName}_setup_${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "displayLanguageSelector": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": true,
+      "installerIcon": "src/img/logo.ico",
+      "uninstallerIcon": "src/img/logo.ico",
+      "installerSidebar": "src/img/sidebar.bmp",
+      "uninstallerSidebar": "src/img/sidebar.bmp",
+      "installerHeader": "src/img/headerbar.bmp",
+      "shortcutName": "一起扫描客户端",
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "scripts": {
+    "start": "set NODE_ENV=development&& electron .",
+    "start-product": "electron .",
+    "dist": "electron-builder",
+    "dist-win": "electron-builder --win --ia32 --dir",
+    "dist-nsis": "electron-builder --win --ia32 --pd='build/win-ia32-unpacked'",
+    "dist-help": "electron-builder --help",
+    "package-asar": "electron-packager ./ --platform=win32 --arch=ia32 --asar --overwrite --ignore=build/ --ignore=web/ --ignore=client/node_modules",
+    "package": "electron-packager ./ --platform=win32 --arch=ia32 --overwrite --ignore=build/ --ignore=web/ --ignore=client/node_modules",
+    "package-help": "electron-packager --help",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "17zuoye",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^5.3.1",
+    "bootstrap": "^4.1.1",
+    "child_process": "^1.0.2",
+    "co": "^4.6.0",
+    "colors": "^1.3.0",
+    "date-and-time": "^0.6.2",
+    "diskspace": "^2.0.0",
+    "ejs": "^2.6.1",
+    "electron-log": "^2.2.15",
+    "electron-reload": "^1.2.2",
+    "electron-updater": "^2.21.10",
+    "express": "^4.16.3",
+    "file-dialog": "0.0.7",
+    "gm": "^1.23.1",
+    "ini": "^1.3.5",
+    "jquery": "^3.3.1",
+    "lowdb": "^1.0.0",
+    "mongodb": "^3.0.10",
+    "network-speed": "^1.2.1",
+    "node-cmd": "^3.0.0",
+    "node-uuid": "^1.4.8",
+    "nw-dialog": "^1.0.7",
+    "ping": "^0.2.2",
+    "popper.js": "^1.14.3",
+    "regedit": "^3.0.0",
+    "request": "^2.87.0",
+    "request-progress": "^3.0.0",
+    "speed-test": "^2.0.0"
+  },
+  "devDependencies": {
+    "Squirrel": "0.0.1",
+    "asar": "^0.14.3",
+    "bootstrap": "^4.1.1",
+    "colors": "^1.3.0",
+    "electron": "^2.0.2",
+    "electron-builder": "^20.5.1",
+    "electron-nsis": "0.0.1-alpha",
+    "electron-package": "^0.1.0",
+    "electron-packager": "^12.1.0",
+    "electron-reload": "^1.2.2",
+    "electron-updater": "^2.21.10",
+    "handlebars": "^4.0.11",
+    "jquery": "^3.3.1",
+    "node-cmd": "^3.0.0",
+    "popper.js": "^1.14.3"
+  }
+}

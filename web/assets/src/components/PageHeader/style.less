@@ -1,0 +1,85 @@
+
+.page_head{
+	height: 95px;
+	min-width: 1300px;
+	border-bottom: 1px solid #bcbcbc;
+	position: relative;
+	background-color: @theme_color;
+	font-family: 'Apple-HeiTi';
+	.app_logo{
+		position: absolute;
+		left: 0;
+		top:0;
+		box-sizing: border-box;
+		img{
+			width:140px;
+			margin-top: 25px;
+			margin-left: 25px;
+		}
+	}
+	.app_system_state{
+		position: absolute;
+		left: 220px;
+		top:8px;
+		box-sizing: border-box;
+		color:#fff;
+		font-size: 14px;
+	}
+	.app_version{
+		position: absolute;
+		right: 340px;
+		top:8px;
+		box-sizing: border-box;
+		color:#fff;
+		font-size: 14px;
+		a{
+			color:#44D2FF;
+			margin-left: 10px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.windows_btns{
+		position: absolute;
+		right: 0;
+		top:0;
+		padding: 6px;
+		box-sizing: border-box;
+		display: flex;
+		.win_btn{
+			margin-left: 5px;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+	}
+	.app_user{
+		position: absolute;
+		right: 140px;
+		top:8px;
+		box-sizing: border-box;
+		color:#fff;
+		font-size: 14px;
+		font-family: 'MicrosoftYaHei';
+		a{
+			color:#44D2FF;
+			margin-left: 10px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.app_exam_info{
+		position: absolute;
+		left:250px;
+		top:45px;
+		display: flex;
+		.exam_info{
+
+		}
+		.scan_btn{
+			margin-left: 20px;
+		}
+	}
+}
